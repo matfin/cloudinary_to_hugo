@@ -75,4 +75,8 @@ module.exports = class Photo {
 		this.y_resolution 	= YResolution;
 	}
 
+	get hugoString () {
+		let items = Object.keys(this).map(key => `${key}:\t\t${this[key]}`).join('\n');
+		return `---\n${items}\n---`;
+	};
 }

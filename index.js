@@ -4,8 +4,39 @@ const 	request = require('request'),
 		config	= require('./config');
 
 
-let single = require('./single.json');
+// const getData = (time = 1000) => {
+// 	return new Promise((resolve, reject) => {
+// 		setTimeout(() => {
+// 			resolve({
+// 				data: {
+// 					testing: true,
+// 					time: time
+// 				}
+// 			});
+// 		}, time);
+// 	});
+// };
 
-let photo = new Photo(single);
+// const makeRequestPromised = () => {
+// 	getData().then(data => {
+// 		console.log(data);
+// 		return 'Promised done!';
+// 	});
+// };
 
-console.log(photo);
+// makeRequestPromised();
+
+// const makeRequestAsynced = async () => {
+// 	for(let i = 1; i <= 10; i++) {
+// 		let data = await getData(1000);
+// 		console.log('We got data that looks like: ', data);
+// 	}
+
+// };
+
+// makeRequestAsynced();
+
+let single = require('./single.json'),
+	photo = new Photo(single);
+
+console.log(photo.hugoString);
