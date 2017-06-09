@@ -3,19 +3,34 @@ const 	request = require('request'),
 		Photo 	= require('./photo'),
 		config	= require('./config');
 
+const getData = (max=200) => {
+	let {
+		cl_url,
+		cl_cloud_name,
+		cl_key,
+		cl_secret
+	} = config;
 
-// const getData = (time = 1000) => {
-// 	return new Promise((resolve, reject) => {
-// 		setTimeout(() => {
-// 			resolve({
-// 				data: {
-// 					testing: true,
-// 					time: time
-// 				}
-// 			});
-// 		}, time);
-// 	});
-// };
+
+	let url = `https://${cl_key}:${cl_secret}@${cl_url}/${cl_cloud_name}/resources/image?max_results=${max}`;
+
+	return new Promise((resolve, reject) => {
+		request(url, (error, response, body) => {
+			if(error) {
+				reject(error);
+			}
+			else {
+				resolve(body);
+			}
+		});
+	});
+};
+
+const populate = async () => {
+	let images = await getData();
+	return images;
+};
+
 
 // const makeRequestPromised = () => {
 // 	getData().then(data => {
@@ -36,7 +51,7 @@ const 	request = require('request'),
 
 // makeRequestAsynced();
 
-let single = require('./single.json'),
-	photo = new Photo(single);
+// let single = require('./single.json'),
+// 	photo = new Photo(single);
 
-console.log(photo.hugoString);
+// console.log(photo.hugoString);

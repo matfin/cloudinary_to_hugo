@@ -17,7 +17,8 @@ module.exports = class Photo {
 		} = json;
 
 		let {
-			CreateDate,
+			DateCreated,
+			TimeCreated,
 			ExposureMode,
 			ExposureProgram,
 			ApertureValue,
@@ -43,8 +44,9 @@ module.exports = class Photo {
 		this.title 			= id_split[1] || 'no-title';
 		this.type 			= type;
 		this.description 	= 'TBC';
-		this.date 			= CreateDate;
+		this.date 			= `${DateCreated.replace(/\:+/g, '-')} ${TimeCreated}`
 		this.album 			= id_split[0] || 'no-album';
+		this.filename 		= `${this.title.replace(/[\W_]+/g, '-')}.md`;
 		this.series 		= 0;
 		this.cl_public_id	= public_id;
 		this.cl_version 	= version;
