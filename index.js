@@ -1,11 +1,11 @@
 const 	request = require('request'),
 		fs		= require('fs'),
-		config	= require('config');
+		Photo 	= require('./photo'),
+		config	= require('./config');
 
-const template = (file) => {
-	return new Promise((resolve, reject) => {
 
-	});
-};
+let single = require('./single.json');
 
-console.log(api_params);
+let photo = new Photo(single);
+
+console.log(photo);
