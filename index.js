@@ -23,7 +23,7 @@ const makeRequest = (url) => {
 	});
 };
 
-const getPhotos = (max=3) => {
+const getPhotos = (max=300) => {
 	return makeRequest(`https://${cl_key}:${cl_secret}@${cl_url}/${cl_cloud_name}/resources/image?max_results=${max}`);
 };
 
@@ -50,8 +50,4 @@ const run = async () => {
 	.catch(console.log);
 };
 
-// run();
-
-// let x = new Photo(require('./single.json'));
-
-// console.log(x.hugoString);
+run();

@@ -44,7 +44,7 @@ module.exports = class Photo {
 		this.title 			= id_split[1] || 'no-title';
 		this.type 			= type;
 		this.description 	= 'TBC';
-		this.date 			= `${DateCreated.replace(/\:+/g, '-')} ${TimeCreated}`
+		this.date 			= this.formatDate(DateCreated, TimeCreated);
 		this.album 			= id_split[0] || 'no-album';
 		this.filename 		= `${this.title.replace(/[\W_]+/g, '-')}.md`;
 		this.series 		= '';
@@ -75,6 +75,16 @@ module.exports = class Photo {
 		this.artist 		= Artist || 'No artist info';
 		this.x_resolution 	= XResolution;
 		this.y_resolution 	= YResolution;
+	}
+
+	formatDate (date, time) {
+		if(date == null) {
+			return 'Date unknown';
+		}
+		if(time == null) {
+			return `${date.replace(/\:+/g, '-')}`;
+		}
+		return `${date.replace(/\:+/g, '-')} ${time}`;
 	}
 
 	get hugoString () {
