@@ -47,7 +47,7 @@ module.exports = class Photo {
 		this.date 			= `${DateCreated.replace(/\:+/g, '-')} ${TimeCreated}`
 		this.album 			= id_split[0] || 'no-album';
 		this.filename 		= `${this.title.replace(/[\W_]+/g, '-')}.md`;
-		this.series 		= 0;
+		this.series 		= '';
 		this.cl_public_id	= public_id;
 		this.cl_version 	= version;
 		this.format			= format;
@@ -67,18 +67,19 @@ module.exports = class Photo {
 		this.metering 		= MeteringMode;
 		this.flash 			= Flash;
 		this.white_balance	= WhiteBalance;
-		this.colour_temp	= ColorTemperature;
-		this.has_crop		= HasCrop;
+		this.colour_temp	= ColorTemperature || 'No colour temperature';
+		this.has_crop		= HasCrop || 'No';
 		this.orientation 	= Orientation;
 		this.camera_model 	= Model;
-		this.lens_info 		= LensInfo;
-		this.artist 		= Artist;
+		this.lens_info 		= LensInfo || 'No lens info';
+		this.artist 		= Artist || 'No artist info';
 		this.x_resolution 	= XResolution;
 		this.y_resolution 	= YResolution;
 	}
 
 	get hugoString () {
-		let items = Object.keys(this).map(key => `${key}:\t\t${this[key]}`).join('\n');
+		let quote = (value) => typeof value === 'string' ? '"':'',
+			items = Object.keys(this).map(key => `${key}:\t\t${quote(this[key])}${this[key]}${quote(this[key])}`).join('\n');
 		return `---\n${items}\n---`;
 	};
 }
