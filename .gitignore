@@ -1,3 +1,4 @@
 node_modules/
 config.js
 generated/
+**/.DS_Store

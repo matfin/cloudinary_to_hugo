@@ -13,7 +13,8 @@ module.exports = class Photo {
 			width,
 			height,
 			bytes,
-			type
+			type,
+			colors
 		} = json;
 
 		let {
@@ -42,7 +43,8 @@ module.exports = class Photo {
 		 *	Basic data
 		 */
 		this.title 			= id_split[1] || 'no-title';
-		this.type 			= type;
+		this.type 			= 'photo';
+		this.mediatype 		= type;
 		this.description 	= 'TBC';
 		this.date 			= this.formatDate(DateCreated, TimeCreated);
 		this.album 			= id_split[0] || 'no-album';
@@ -54,6 +56,7 @@ module.exports = class Photo {
 		this.bytes			= bytes;
 		this.width 			= width;
 		this.height 		= height;
+		this.colours 		= colors;
 
 		/**
 		 *	Exif metadata
@@ -79,7 +82,7 @@ module.exports = class Photo {
 
 	formatDate (date, time) {
 		if(date == null) {
-			return 'Date unknown';
+			return '1970-01-01';
 		}
 		if(time == null) {
 			return `${date.replace(/\:+/g, '-')}`;
@@ -87,9 +90,27 @@ module.exports = class Photo {
 		return `${date.replace(/\:+/g, '-')} ${time}`;
 	}
 
+	extractColours (colours) {
+		return colours.map(colour => `- "${colour[0]}"`);
+	}
+
 	get hugoString () {
-		let quote = (value) => typeof value === 'string' ? '"':'',
-			items = Object.keys(this).map(key => `${key}:\t\t${quote(this[key])}${this[key]}${quote(this[key])}`).join('\n');
-		return `---\n${items}\n---`;
-	};
+		let keys = Object.keys(this);
+		
+		let items = keys.map((key) => {
+			let value = this[key];
+
+			if(key === 'colours') {
+				return `${key}:\n${this.extractColours(value).join('\n')}`;
+			}
+
+			if(typeof value === 'string') {
+				return `${key}:\t\t"${value}"`;
+			}
+			
+			return `${key}:\t\t${value}`;
+		});
+
+		return `---\n${items.join('\n')}\n---`;
+	}
 }

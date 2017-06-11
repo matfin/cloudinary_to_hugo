@@ -1,129 +1,142 @@
 {
-  "public_id":"events/spirit-of-folk-shield",
+  "public_id":"people/anna-portrait",
   "format":"tiff",
-  "version":1497002647,
+  "version":1497005333,
   "resource_type":"image",
   "type":"upload",
-  "created_at":"2017-06-09T10:04:07Z",
-  "bytes":8126128,
-  "width":2174,
+  "created_at":"2017-06-09T10:48:53Z",
+  "bytes":1762448,
+  "width":961,
   "height":1440,
-  "url":"http://res.cloudinary.com/matt-finucane-portfolio/image/upload/v1497002647/events/spirit-of-folk-shield.tiff",
-  "secure_url":"https://res.cloudinary.com/matt-finucane-portfolio/image/upload/v1497002647/events/spirit-of-folk-shield.tiff",
-  "next_cursor":"a484cceade45e3c08625e9e869da0d42",
+  "url":"http://res.cloudinary.com/matt-finucane-portfolio/image/upload/v1497005333/people/anna-portrait.tiff",
+  "secure_url":"https://res.cloudinary.com/matt-finucane-portfolio/image/upload/v1497005333/people/anna-portrait.tiff",
+  "next_cursor":"1e6827a8a0e038e5062cb29d8b118658",
   "derived":[
+    {
+      "transformation":"w_640/jpg",
+      "format":"jpg",
+      "bytes":56255,
+      "id":"fbbe291836b2fa5b6804a542c0f34fde",
+      "url":"http://res.cloudinary.com/matt-finucane-portfolio/image/upload/w_640/v1497005333/people/anna-portrait.jpg",
+      "secure_url":"https://res.cloudinary.com/matt-finucane-portfolio/image/upload/w_640/v1497005333/people/anna-portrait.jpg",
+      "extension":"jpg"
+    },
+    {
+      "transformation":"w_320/jpg",
+      "format":"jpg",
+      "bytes":19002,
+      "id":"b07a0ebd85f023bfe7ece06b3838fac7",
+      "url":"http://res.cloudinary.com/matt-finucane-portfolio/image/upload/w_320/v1497005333/people/anna-portrait.jpg",
+      "secure_url":"https://res.cloudinary.com/matt-finucane-portfolio/image/upload/w_320/v1497005333/people/anna-portrait.jpg",
+      "extension":"jpg"
+    },
     {
       "transformation":"t_media_lib_thumb/jpg",
       "format":"jpg",
-      "bytes":6064,
-      "id":"fe1d080ef3d66a676be75d14eba44f3e",
-      "url":"http://res.cloudinary.com/matt-finucane-portfolio/image/upload/t_media_lib_thumb/v1497002647/events/spirit-of-folk-shield.jpg",
-      "secure_url":"https://res.cloudinary.com/matt-finucane-portfolio/image/upload/t_media_lib_thumb/v1497002647/events/spirit-of-folk-shield.jpg",
+      "bytes":2560,
+      "id":"8a73156d5c1cb8028ce14586cd2b61ed",
+      "url":"http://res.cloudinary.com/matt-finucane-portfolio/image/upload/t_media_lib_thumb/v1497005333/people/anna-portrait.jpg",
+      "secure_url":"https://res.cloudinary.com/matt-finucane-portfolio/image/upload/t_media_lib_thumb/v1497005333/people/anna-portrait.jpg",
       "extension":"jpg"
     }
   ],
-  "etag":"ee859ea90e08600bc23e73a531a9e941",
+  "etag":"243b0f70d85a2e770b7cf755030df957",
   "image_metadata":{
     "CodedCharacterSet":"UTF8",
     "ApplicationRecordVersion":"0",
-    "By-line":"Matt Finucane",
-    "DateCreated":"2011:09:24",
-    "TimeCreated":"16:42:14+00:00",
-    "CopyrightNotice":"A",
+    "DateCreated":"2017:05:21",
+    "TimeCreated":"19:28:23+00:00",
     "SubfileType":"Full-resolution Image",
-    "ImageWidth":"2174",
+    "ImageWidth":"961",
     "ImageHeight":"1440",
     "BitsPerSample":"8 8 8",
     "Compression":"LZW",
     "PhotometricInterpretation":"RGB",
     "Make":"NIKON CORPORATION",
-    "Model":"NIKON D7000",
-    "StripOffsets":"(Binary data 281 bytes, use -b option to extract)",
+    "Model":"NIKON D800",
+    "StripOffsets":"(Binary data 118 bytes, use -b option to extract)",
     "Orientation":"Horizontal (normal)",
     "SamplesPerPixel":"3",
-    "RowsPerStrip":"40",
-    "StripByteCounts":"(Binary data 251 bytes, use -b option to extract)",
+    "RowsPerStrip":"90",
+    "StripByteCounts":"(Binary data 106 bytes, use -b option to extract)",
     "XResolution":"300",
     "YResolution":"300",
     "PlanarConfiguration":"Chunky",
     "ResolutionUnit":"inches",
     "Software":"Adobe Photoshop CC 2017 (Macintosh)",
-    "ModifyDate":"2017:06:06 22:32:52",
-    "Artist":"Matt Finucane",
+    "ModifyDate":"2017:06:07 23:10:00",
     "Predictor":"Horizontal differencing",
-    "Copyright":"A",
-    "ExposureTime":"1/1000",
-    "FNumber":"20.0",
-    "ExposureProgram":"Manual",
-    "ISO":"8000",
+    "ExposureTime":"1/640",
+    "FNumber":"1.4",
+    "ExposureProgram":"Aperture-priority AE",
+    "ISO":"100",
     "SensitivityType":"Recommended Exposure Index",
     "ExifVersion":"0221",
-    "DateTimeOriginal":"2011:09:24 16:42:14",
-    "CreateDate":"2011:09:24 16:42:14",
-    "ShutterSpeedValue":"1/1000",
-    "ApertureValue":"20.0",
+    "DateTimeOriginal":"2017:05:21 19:28:23",
+    "CreateDate":"2017:05:21 19:28:23",
+    "ShutterSpeedValue":"1/640",
+    "ApertureValue":"1.4",
     "ExposureCompensation":"0",
-    "MaxApertureValue":"5.5",
-    "MeteringMode":"Center-weighted average",
+    "MaxApertureValue":"1.0",
+    "MeteringMode":"Multi-segment",
     "LightSource":"Unknown",
     "Flash":"Off, Did not fire",
-    "FocalLength":"120.0 mm",
-    "SubSecTime":"20",
-    "SubSecTimeOriginal":"20",
-    "SubSecTimeDigitized":"20",
+    "FocalLength":"50.0 mm",
+    "SubSecTime":"50",
+    "SubSecTimeOriginal":"50",
+    "SubSecTimeDigitized":"50",
     "ColorSpace":"Uncalibrated",
-    "ExifImageWidth":"2174",
+    "ExifImageWidth":"961",
     "ExifImageHeight":"1440",
+    "FocalPlaneXResolution":"2048.402222",
+    "FocalPlaneYResolution":"2048.402222",
+    "FocalPlaneResolutionUnit":"cm",
     "SensingMethod":"One-chip color area",
     "FileSource":"Digital Camera",
     "SceneType":"Directly photographed",
     "CFAPattern":"[Red,Green][Green,Blue]",
     "CustomRendered":"Normal",
-    "ExposureMode":"Manual",
+    "ExposureMode":"Auto",
     "DigitalZoomRatio":"1",
-    "FocalLengthIn35mmFormat":"180 mm",
+    "FocalLengthIn35mmFormat":"50 mm",
     "SceneCaptureType":"Standard",
-    "GainControl":"High gain up",
+    "GainControl":"None",
     "Contrast":"Normal",
     "Saturation":"Normal",
     "Sharpness":"Normal",
     "SubjectDistanceRange":"Unknown",
-    "SerialNumber":"6130050",
-    "LensInfo":"18-200mm f/3.5-5.6",
-    "LensModel":"18.0-200.0 mm f/3.5-5.6",
+    "SerialNumber":"6132567",
+    "LensInfo":"0mm f/0",
+    "LensModel":"0.0 mm f/0.0",
     "XMPToolkit":"Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01",
-    "Creator":"Matt Finucane",
-    "Rights":"A",
-    "Format":"image/tiff",
-    "CreatorTool":"Ver.1.01",
+    "CreatorTool":"Ver.1.02",
+    "MetadataDate":"2017:06:07 23:10+02:00",
     "Rating":"0",
-    "MetadataDate":"2017:06:06 22:32:52+02:00",
-    "Lens":"18.0-200.0 mm f/3.5-5.6",
-    "ImageNumber":"13766",
-    "ApproximateFocusDistance":"10.6",
-    "DistortionCorrectionAlreadyApplied":"true",
+    "Lens":"0.0 mm f/0.0",
+    "ImageNumber":"9848",
     "LateralChromaticAberrationCorrectionAlreadyApplied":"true",
-    "VignetteCorrectionAlreadyApplied":"true",
     "ColorMode":"RGB",
     "ICCProfileName":"Adobe RGB (1998)",
-    "DocumentID":"adobe:docid:photoshop:bb65ddd0-8b71-117a-9505-b1a660fdaf64",
-    "HistoryAction":"derived, saved, saved",
+    "DocumentID":"adobe:docid:photoshop:20a20b1a-8c01-117a-9505-b1a660fdaf64",
+    "OriginalDocumentID":"19BD927D462A95D139527FA7557461A1",
+    "InstanceID":"xmp.iid:a758d5d5-b885-49e7-a733-f3a5780fedb5",
+    "HistoryAction":"saved, saved, derived, saved, saved",
+    "HistoryInstanceID":"xmp.iid:91344dd1-165f-41b7-8cc7-401787b9eb9e, xmp.iid:f69fd4db-be60-4670-aad8-82fd8a9b75af, xmp.iid:1895d8ff-51f4-43d2-8c8b-13b23ae034d4, xmp.iid:a758d5d5-b885-49e7-a733-f3a5780fedb5",
+    "HistoryWhen":"2017:06:07 23:08:38+02:00, 2017:06:07 23:08:38+02:00, 2017:06:07 23:09:19+02:00, 2017:06:07 23:10+02:00",
+    "HistorySoftwareAgent":"Adobe Photoshop Camera Raw 9.9, Adobe Photoshop Camera Raw 9.9 (Macintosh), Adobe Photoshop Camera Raw 9.9 (Macintosh), Adobe Photoshop CC 2017 (Macintosh)",
+    "HistoryChanged":"/metadata, /metadata, /, /",
     "HistoryParameters":"converted from image/x-nikon-nef to image/tiff",
-    "HistoryInstanceID":"xmp.iid:b5859815-b5ab-45fc-81cf-de377ef18166, xmp.iid:f93aec31-d137-456e-9283-ff042d58aa4b",
-    "HistoryWhen":"2017:06:06 22:32:03+02:00, 2017:06:06 22:32:52+02:00",
-    "HistorySoftwareAgent":"Adobe Photoshop Camera Raw 9.9 (Macintosh), Adobe Photoshop CC 2017 (Macintosh)",
-    "HistoryChanged":"/, /",
-    "OriginalDocumentID":"8A4857C1407F8AABEF70D6D160845535",
-    "DerivedFromDocumentID":"8A4857C1407F8AABEF70D6D160845535",
-    "DerivedFromOriginalDocumentID":"8A4857C1407F8AABEF70D6D160845535",
-    "InstanceID":"xmp.iid:f93aec31-d137-456e-9283-ff042d58aa4b",
-    "RawFileName":"DSC_3480.NEF",
+    "DerivedFromInstanceID":"xmp.iid:f69fd4db-be60-4670-aad8-82fd8a9b75af",
+    "DerivedFromDocumentID":"19BD927D462A95D139527FA7557461A1",
+    "DerivedFromOriginalDocumentID":"19BD927D462A95D139527FA7557461A1",
+    "Format":"image/tiff",
+    "RawFileName":"DSC_9653.NEF",
     "Version":"9.9",
     "ProcessVersion":"6.7",
-    "WhiteBalance":"Custom",
+    "WhiteBalance":"As Shot",
     "AutoWhiteVersion":"134348800",
-    "ColorTemperature":"4150",
-    "Tint":"+19",
+    "ColorTemperature":"4800",
+    "Tint":"-9",
     "LuminanceSmoothing":"0",
     "ColorNoiseReduction":"25",
     "VignetteAmount":"0",
@@ -178,7 +191,7 @@
     "GrainAmount":"0",
     "ColorNoiseReductionDetail":"50",
     "ColorNoiseReductionSmoothness":"50",
-    "LensProfileEnable":"1",
+    "LensProfileEnable":"0",
     "LensManualDistortionAmount":"0",
     "PerspectiveVertical":"0",
     "PerspectiveHorizontal":"0",
@@ -189,13 +202,13 @@
     "PerspectiveX":"0.0",
     "PerspectiveY":"0.0",
     "AutoLateralCA":"1",
-    "Exposure2012":"0.0",
-    "Contrast2012":"+30",
-    "Highlights2012":"-10",
-    "Shadows2012":"-1",
-    "Whites2012":"-35",
+    "Exposure2012":"+0.30",
+    "Contrast2012":"+20",
+    "Highlights2012":"0",
+    "Shadows2012":"0",
+    "Whites2012":"0",
     "Blacks2012":"0",
-    "Clarity2012":"+35",
+    "Clarity2012":"+10",
     "DefringePurpleAmount":"0",
     "DefringePurpleHueLo":"30",
     "DefringePurpleHueHi":"70",
@@ -216,14 +229,8 @@
     "ToneCurvePV2012Green":"0, 0, 255, 255",
     "ToneCurvePV2012Blue":"0, 0, 255, 255",
     "CameraProfile":"Adobe Standard",
-    "CameraProfileDigest":"2FEA3EA92D5DFE77FBB77CCAD84C4769",
+    "CameraProfileDigest":"CA4F221DEBD3C272C94F7C3624CF9A18",
     "LensProfileSetup":"LensDefaults",
-    "LensProfileName":"Adobe (Nikon AF-S DX NIKKOR 18-200mm f/3.5-5.6G ED VR II)",
-    "LensProfileFilename":"NIKON D90 (Nikon AF-S DX NIKKOR 18-200mm f3.5-5.6G ED VR II) - RAW.lcp",
-    "LensProfileDigest":"0393084BF82E26E09731385C1949BE99",
-    "LensProfileDistortionScale":"100",
-    "LensProfileChromaticAberrationScale":"100",
-    "LensProfileVignettingScale":"100",
     "UprightVersion":"151388160",
     "UprightCenterMode":"0",
     "UprightCenterNormX":"0.5",
@@ -236,7 +243,7 @@
     "HasSettings":"true",
     "HasCrop":"false",
     "AlreadyApplied":"true",
-    "IPTCDigest":"3a322ce7d29ee40f2e6d1800cdea609d",
+    "IPTCDigest":"4174f89b2f666f4b5a3aa97835f7468f",
     "DisplayedUnitsX":"inches",
     "DisplayedUnitsY":"inches",
     "PrintStyle":"Centered",
@@ -248,15 +255,133 @@
     "SlicesGroupName":"",
     "NumSlices":"1",
     "PixelAspectRatio":"1",
-    "PhotoshopThumbnail":"(Binary data 7857 bytes, use -b option to extract)",
+    "PhotoshopThumbnail":"(Binary data 4044 bytes, use -b option to extract)",
     "HasRealMergedData":"Yes",
     "WriterName":"Adobe Photoshop",
     "ReaderName":"Adobe Photoshop CC 2017",
     "ProfileDescription":"Adobe RGB (1998)",
     "Colorspace":"RGB"
   },
-  "illustration_score":0.0012413114309310913,
+  "illustration_score":0.20597612857818604,
   "semi_transparent":false,
   "grayscale":false,
+  "colors":[
+    [
+      "#7D5D4B",
+      11.8
+    ],
+    [
+      "#111D21",
+      11.2
+    ],
+    [
+      "#CFB7AF",
+      9.4
+    ],
+    [
+      "#6D5B3B",
+      8.6
+    ],
+    [
+      "#3F3723",
+      8.3
+    ],
+    [
+      "#34231A",
+      7.8
+    ],
+    [
+      "#BF9584",
+      5.1
+    ],
+    [
+      "#393730",
+      5.1
+    ],
+    [
+      "#356573",
+      3.7
+    ],
+    [
+      "#2D3431",
+      3.5
+    ],
+    [
+      "#7A7540",
+      3.1
+    ],
+    [
+      "#766A5F",
+      3.0
+    ],
+    [
+      "#394123",
+      2.9
+    ],
+    [
+      "#0E1614",
+      2.8
+    ],
+    [
+      "#596932",
+      1.8
+    ],
+    [
+      "#6E713D",
+      1.5
+    ],
+    [
+      "#8A5555",
+      1.3
+    ],
+    [
+      "#172115",
+      1.1
+    ],
+    [
+      "#29390A",
+      1.0
+    ],
+    [
+      "#68685A",
+      0.9
+    ],
+    [
+      "#05151B",
+      0.9
+    ],
+    [
+      "#BD8685",
+      0.7
+    ]
+  ],
+  "predominant":{
+    "google":[
+      [
+        "brown",
+        44.6
+      ],
+      [
+        "gray",
+        16.5
+      ],
+      [
+        "black",
+        14.9
+      ],
+      [
+        "yellow",
+        11.2
+      ],
+      [
+        "teal",
+        7.2
+      ],
+      [
+        "green",
+        1.1
+      ]
+    ]
+  },
   "pages":1
 }

@@ -51,3 +51,11 @@ const run = async () => {
 };
 
 run();
+
+// const sample = require('./single.json');
+
+// const photo = new Photo(sample);
+
+// let hugo = photo.hugoString;
+
+// console.log(hugo);
