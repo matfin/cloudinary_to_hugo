@@ -13,7 +13,7 @@ let {
 const makeRequest = (url) => {
 	return new Promise((resolve, reject) => {
 		request(url, (error, response, body) => {
-			if(error) {
+			if(error || body.error) {
 				reject(error);
 			}
 			else {
@@ -28,7 +28,8 @@ const getPhotos = (max=300) => {
 };
 
 const getPhoto = (public_id) => {
-	return makeRequest(`https://${cl_key}:${cl_secret}@${cl_url}/${cl_cloud_name}/resources/image/upload/${public_id}?image_metadata=true`);
+	console.log(`Getting photo with id ${public_id}`);
+	return makeRequest(`https://${cl_key}:${cl_secret}@${cl_url}/${cl_cloud_name}/resources/image/upload/${public_id}?image_metadata=true&colors=true`);
 };
 
 const writeFile = (photo) => {

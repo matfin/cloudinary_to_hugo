@@ -91,6 +91,9 @@ module.exports = class Photo {
 	}
 
 	extractColours (colours) {
+		if(colours == null) {
+			return false;
+		}
 		return colours.map(colour => `- "${colour[0]}"`);
 	}
 
@@ -101,7 +104,13 @@ module.exports = class Photo {
 			let value = this[key];
 
 			if(key === 'colours') {
-				return `${key}:\n${this.extractColours(value).join('\n')}`;
+				let extracted_colours = this.extractColours(value);
+				if(extracted_colours) {
+					return `${key}:\n${this.extractColours(value).join('\n')}`;
+				}
+				else {
+					return '';
+				}
 			}
 
 			if(typeof value === 'string') {
