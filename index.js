@@ -1,9 +1,10 @@
 const 	request = require('request'),
-		fs		= require('fs'),
-		Photo 	= require('./photo'),
-		config	= require('./config');
+				fs 			= require('fs'),
+				mkdirp	= require('mkdirp'),
+				Photo 	= require('./photo'),
+				config	= require('./config');
 
-let {
+const {
 	cl_url,
 	cl_cloud_name,
 	cl_key,
@@ -33,7 +34,21 @@ const getPhoto = (public_id) => {
 };
 
 const writeFile = (photo) => {
-	fs.writeFile(`./generated/${photo.album}/${photo.title}.md`, photo.hugoString, console.log, console.error);
+	const path = `./generated/${photo.album}`;
+	new Promise((resolve, reject) => {
+		mkdirp(path, (err) => {
+			if(err) {
+				reject(err)
+			}
+			else {
+				resolve({done: true});
+			}
+		});
+	}).then((result) => {
+		fs.writeFileSync(`${path}/${photo.title}.md`, photo.hugoString, console.log, console.error);
+	}).catch((e) => {
+		console.log({error: e});
+	});
 };
 
 const writeHugoFiles = async (photos) => {
@@ -42,8 +57,8 @@ const writeHugoFiles = async (photos) => {
 };
 
 const run = async () => {
-	let photos 	= JSON.parse(await getPhotos()).resources;
-	let	tasks	= photos.map((photo) => getPhoto(photo.public_id));
+	const photos 	= JSON.parse(await getPhotos()).resources;
+	const	tasks	= photos.map((photo) => getPhoto(photo.public_id));
 
 	Promise
 	.all(tasks)
@@ -52,11 +67,3 @@ const run = async () => {
 };
 
 run();
-
-// const sample = require('./single.json');
-
-// const photo = new Photo(sample);
-
-// let hugo = photo.hugoString;
-
-// console.log(hugo);
