@@ -15,5 +15,10 @@
   "dependencies": {
     "mkdirp": "^0.5.1",
     "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulpclass": "^0.1.2",
+    "typescript": "^2.5.2"
   }
 }
